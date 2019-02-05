@@ -1,0 +1,12 @@
+* Minimal Lexer Generator with Flex
+
+
+A lexer transform a sequence of characters into a sequence of
+tokens. Flex is a popular command line tool that produces generates
+lexers.  Below is a helllo-world example for lexing inputs from the standard input 
+
+- First, specifiy your lexer in the ~hello.l~ file. 
+- Then, generate the lexer with ~flex hello.l~. In this step, Flex generates the lexer,  ~lex.yy.c~. 
+- At last, run the lexer with ~gcc lex.yy.c && ./a.out~. The lexer
+  takes inputs from stdin and output tokens to stdout.
+
